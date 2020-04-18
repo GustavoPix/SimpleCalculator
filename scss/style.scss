@@ -1,0 +1,76 @@
+@import "reset";
+@import "variables";
+body{
+    overflow: hidden;
+}
+
+.main{
+    width: 100vw;
+    height: 100vh;
+    background: $color1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .logo{
+        font-size: 30px;
+        color: $color4;
+        font-family: $font1;
+        margin-bottom: 50px;
+    }
+    .calculadora{
+        width: 500px;
+        border: 1px solid $color2;
+        .painel{
+            width: 100%;
+            .ultimo{
+                font-size: 15px;
+                font-family: $font2;
+                color: $color3;
+                text-align: right;
+                padding: 20px;
+            }
+            .atual{
+                font-size: 25px;
+                font-family: $font2;
+                color: $color4;
+                text-align: right;
+                padding: 20px;
+            }
+        }
+        .teclado{
+            width: 100%;
+            ul{
+                width: 100%;
+                @include mx-clearfix();
+                li{
+                    float: left;
+                    width: 25%;
+                    font-size: 25px;
+                    font-family: $font2;
+                    color: $color3;
+                    text-align: center;
+                    padding: 20px;
+                    transition: 0.5s ease;
+                    cursor: pointer;
+                    &:hover{
+                        color: $color4;
+                    }
+                }
+            }
+        }
+    }
+    
+}
+
+.credito{
+    position: absolute;
+    bottom: 50px;
+    width: 100%;
+    text-align: center;
+    a{
+        font-size: 15px;
+        font-family: $font2;
+        color: $color3;
+    }
+}
