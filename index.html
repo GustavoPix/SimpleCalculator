@@ -15,8 +15,9 @@
         </div>
         <div class="calculadora">
             <div class="painel">
-                <p class="ultimo">125 + 2 =</p>
-                <p class="atual">127</p>
+                <p class="ultimo">{{history}}</p>
+                <p class="atual" v-if="atual != ''">{{atual}}</p>
+                <p class="atual" v-else>{{result}}</p>
             </div>
             <div class="teclado">
                 <ul>
@@ -26,22 +27,22 @@
                     <li>/</li>
                 </ul>
                 <ul>
-                    <li>7</li>
-                    <li>8</li>
-                    <li>9</li>
-                    <li>X</li>
+                    <li @click="addNumber(7)">7</li>
+                    <li @click="addNumber(8)">8</li>
+                    <li @click="addNumber(9)">9</li>
+                    <li >X</li>
                 </ul>
                 <ul>
-                    <li>4</li>
-                    <li>5</li>
-                    <li>6</li>
+                    <li @click="addNumber(4)">4</li>
+                    <li @click="addNumber(5)">5</li>
+                    <li @click="addNumber(6)">6</li>
                     <li>-</li>
                 </ul>
                 <ul>
-                    <li>1</li>
-                    <li>2</li>
-                    <li>3</li>
-                    <li>+</li>
+                    <li @click="addNumber(1)">1</li>
+                    <li @click="addNumber(2)">2</li>
+                    <li @click="addNumber(3)">3</li>
+                    <li @click="addOperator('+')">+</li>
                 </ul>
                 <ul>
                     <li>+/-</li>

@@ -66,6 +66,7 @@ body {
   color: #29c7ac;
   text-align: right;
   padding: 20px;
+  min-height: 70px;
 }
 
 .main .calculadora .teclado {
