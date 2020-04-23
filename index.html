@@ -21,22 +21,22 @@
             </div>
             <div class="teclado">
                 <ul>
-                    <li><-</li>
-                    <li>CE</li>
-                    <li>C</li>
-                    <li>/</li>
+                    <li @click="deleteLastNumber"><-</li>
+                    <li @click="clearAll">CE</li>
+                    <li @click="clear">C</li>
+                    <li @click="addOperator('/')">/</li>
                 </ul>
                 <ul>
                     <li @click="addNumber(7)">7</li>
                     <li @click="addNumber(8)">8</li>
                     <li @click="addNumber(9)">9</li>
-                    <li >X</li>
+                    <li @click="addOperator('*')">X</li>
                 </ul>
                 <ul>
                     <li @click="addNumber(4)">4</li>
                     <li @click="addNumber(5)">5</li>
                     <li @click="addNumber(6)">6</li>
-                    <li>-</li>
+                    <li @click="addOperator('-')">-</li>
                 </ul>
                 <ul>
                     <li @click="addNumber(1)">1</li>
@@ -45,10 +45,10 @@
                     <li @click="addOperator('+')">+</li>
                 </ul>
                 <ul>
-                    <li>+/-</li>
-                    <li>0</li>
-                    <li>,</li>
-                    <li>=</li>
+                    <li @click="invertAtual">+/-</li>
+                    <li @click="addNumber(0)">0</li>
+                    <li @click="addDot">,</li>
+                    <li @click="resultOperation()">=</li>
                 </ul>
             </div>
         </div>
