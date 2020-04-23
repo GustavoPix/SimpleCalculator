@@ -44,7 +44,7 @@ const vm_main = new Vue({
                             this.result /= parseFloat(this.atual)
                             break;
                     }
-                    if(this.result.toString().length > 8)
+                    if(this.result.toString().length > 8 || this.result == "Infinity")
                     {
                         this.result = "ERR";
                         this.nextReset = true;
@@ -91,7 +91,7 @@ const vm_main = new Vue({
                     default:
                         this.result = parseFloat(this.atual)
                 }
-                if(this.result.toString().length > 8)
+                if(this.result.toString().length > 8 || this.result == "Infinity")
                 {
                     this.result = "ERR";
                 }

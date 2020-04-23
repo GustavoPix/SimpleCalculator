@@ -20,7 +20,7 @@ body {
 .main {
   width: 100vw;
   height: 100vh;
-  background: #54123b;
+  background: #1b262c;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -38,14 +38,14 @@ body {
 
 .main .logo {
   font-size: 30px;
-  color: #29c7ac;
+  color: #bbe1fa;
   font-family: "Dosis", sans-serif;
   margin-bottom: 50px;
 }
 
 .main .calculadora {
   width: 500px;
-  border: 1px solid #84142d;
+  border: 1px solid #0f4c75;
 }
 
 .main .calculadora .painel {
@@ -55,7 +55,7 @@ body {
 .main .calculadora .painel .ultimo {
   font-size: 15px;
   font-family: "Courier Prime", monospace;
-  color: #c02739;
+  color: #3282b8;
   text-align: right;
   padding: 20px;
 }
@@ -63,7 +63,7 @@ body {
 .main .calculadora .painel .atual {
   font-size: 25px;
   font-family: "Courier Prime", monospace;
-  color: #29c7ac;
+  color: #bbe1fa;
   text-align: right;
   padding: 20px;
   min-height: 70px;
@@ -94,7 +94,7 @@ body {
   width: 25%;
   font-size: 25px;
   font-family: "Courier Prime", monospace;
-  color: #c02739;
+  color: #3282b8;
   text-align: center;
   padding: 20px;
   -webkit-transition: 0.5s ease;
@@ -103,7 +103,7 @@ body {
 }
 
 .main .calculadora .teclado ul li:hover {
-  color: #29c7ac;
+  color: #bbe1fa;
 }
 
 .credito {
@@ -116,6 +116,6 @@ body {
 .credito a {
   font-size: 15px;
   font-family: "Courier Prime", monospace;
-  color: #c02739;
+  color: #3282b8;
 }
 /*# sourceMappingURL=style.css.map */
